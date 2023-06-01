@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <div> 
+      <!-- <router-link>는 a태그로 작용 -->
+      <router-link to="/login">Login</router-link>
+      <router-link to="/main">Main</router-link>
+    </div>
+    <router-view></router-view> <!-- 라우터가 가지고있는 태그, instance에 라우터 연결해야지만 사용가능 -->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue-router@3/dist/vue-router.js"></script>
+  <script>
+    var LoginComponent = {
+      template: '<h1>login</h1>'
+    }
+    var MainComponent = {
+      template: '<h1>main</h1>'
+    }
+    var router = new VueRouter({
+      mode: 'history', // URL에서 #제거
+      
+       // 페이지의 라우팅 정보(routes안에는 배열이 들어가며, 페이지 수대로 객체 생성.)
+      routes: [
+        /** loginPage **/
+        {
+          path: '/login', // page의 URL
+          component: LoginComponent // 해당 URL에서 표시될 component
+        },
+        /** mainPage **/
+        {
+          path: '/main',
+          component: MainComponent
+        } 
+      ]
+    });
+
+    new Vue({
+      el: '#app',
+      router: router // router 연결 필수!
+    })
+
+  </script>
+</body>
+
+</html>

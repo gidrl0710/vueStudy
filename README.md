@@ -1,4 +1,4 @@
-Vue.js 입문
+##Vue.js 입문
 
 #기술 스택 
 - Vue.js 
@@ -22,7 +22,7 @@ Vue.js 입문
   - props
   - event emit
 - HTTP 통신 라이브러리 axios 
-- template 문법
+- template 문법add
   - 데이터 바인딩
   - 뷰 디렉티브
 - Vue CLI

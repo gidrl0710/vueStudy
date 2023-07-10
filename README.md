@@ -1,6 +1,6 @@
-##Vue.js 입문
+## Vue.js 입문
 
-#기술 스택 
+# 기술 스택 
 - Vue.js 
 - Vue 
 - Router 
@@ -8,14 +8,14 @@
 - Axios 
 - Vue Test Utils
 
-#개발 환경 
+# 개발 환경 
 - Chrome 
 - Git 
 - Visual Studio Code 
 - Node.js LTS 버전(v10.x 이상) 
 - Vue.js Dev Tools
 
-#실습내용
+# 실습내용
 - Reactivity
 - instance
 - component
